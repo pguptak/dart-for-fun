@@ -1,0 +1,22 @@
+void main() {
+  User user1 = User('Ram', 25);
+  user1.printuser();
+  
+  User user2 = User('Shyam', 26);
+  user2.printuser();
+}
+
+class User{
+  String uname = '';
+  int age = 30;
+  
+  User(String username, int ag){
+    this.uname = username;
+    this.age = ag;
+  }
+  void printuser(){
+    print(this.uname);
+    print(this.age);
+    print('User logged in');
+  }
+}
